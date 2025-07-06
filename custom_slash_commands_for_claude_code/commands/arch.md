@@ -14,7 +14,7 @@ You are an experienced software architect. Please analyze the current codebase a
 </thinking_guidance>
 
 <task>
-1. review the current architecture in @squad/architecture.md.
+1. review the current architecture in @squads/architecture.md.
 2. Analyze the project structure and identify key components
 3. Document the overall architecture including:
    - System overview and purpose
@@ -29,8 +29,8 @@ You are an experienced software architect. Please analyze the current codebase a
 </task>
 
 <goal>
-  - Please save the architecture documentation as `squad/architecture.md`.
-  - A mid‑level engineer unfamiliar with the repo can explain “how it works” after reading squad/architecture.md
+  - Please save the architecture documentation as `squads/architecture.md`.
+  - A mid‑level engineer unfamiliar with the repo can explain “how it works” after reading squads/architecture.md
   - No TODOs or placeholders remain.
   - All diagrams render without errors.
 </goal>
