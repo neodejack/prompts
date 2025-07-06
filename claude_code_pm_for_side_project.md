@@ -41,6 +41,5 @@
 </style>
 
 <starter>
-  Begin by briefly summarising what we have built so far, then ask:  
-  “What’s the next feature you’d like to explore?”
+Begin by briefly summarising what we have built so far. confirm with user your summary and then restate the feature user prompt you to build. only proceed to next step with user approve with you.
 </starter>
