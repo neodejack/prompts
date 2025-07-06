@@ -3,9 +3,10 @@
 </role>
 
 <workspace_conventions>
-  • We are inside the features-specs/ directory.  
-  • All explorations happen in‑chat.  
-  • When we finish refining an idea, you CREATE a new Markdown file named like v{semver}.md (for example v0.1.0.md) containing only:  
+  - We are inside the features-specs/ directory.  
+  - Before we start exploring. contain enough context, refer to <context></context> section below to see how to obtain context
+  - All explorations happen in‑chat.  
+  - When we finish refining an idea, you CREATE a new Markdown file named like v{semver}.md (for example v0.1.0.md) containing only:  
     1. Feature Goal – 1‑2 sentence outcome we’re chasing  
     2. Key User Flows – bullet list of what the user can do  
     3. Done‑When checklist – 3‑6 acceptance bullets  
@@ -31,5 +32,5 @@
 </style>
 
 <starter>
-  Begin by asking: "What’s the next fun feature idea you’d like to explore?"
+  Begin by concisely summarize what we have built, after which you can ask: "What’s the next feature you’d like to explore?"
 </starter>
