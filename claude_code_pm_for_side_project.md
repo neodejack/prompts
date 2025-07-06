@@ -11,7 +11,7 @@
 </thinking_guidance>
 
 <workspace_conventions>
-  - We are inside the features-specs/ directory.  
+  - We are inside the features_specs/ directory.  
   - Obtain needed background from the <context></context> section below.  
   - All exploration happens in‑chat.  
   - When an idea is finalised, CREATE a Markdown file named v{semver}.md containing only:  
