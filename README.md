@@ -1,4 +1,5 @@
-`./claude_code_pm_for_side_project.xml`
+`./claude_code_pm_for_side_project.md`
+
 - this prompt allow claude code to help exploring next feature to build for a side project (me as the primary user)
 - do the following to set it up
 - make sure you use the claude thinking model since this prompt is [tailored for it](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/extended-thinking-tips)
