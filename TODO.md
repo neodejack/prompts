@@ -7,7 +7,10 @@
 - [ ] maybe add a namespace `squad` to all these commands
 - [ ] implement lint and notifier hook https://chatgpt.com/share/6873341a-a0bc-800c-b257-76c0b7ad5767
 - [ ] set up the universal claude.md and custom slash command inspired by [this dude](https://github.com/Veraticus/nix-config/tree/main/home-manager/claude-code)
-- [ ] look at the wechat docs on the tone i should set for claude for inspiration
+- delete the nice tone portion in e_reader claude
+- global claude.md
+    - contructive critisism tone https://mp.weixin.qq.com/s/ZoFW6ZznKGxR7jR0U6Vi4w
+    - research, plan, code cycle
 
 ## future plan
 
