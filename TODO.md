@@ -4,14 +4,15 @@
 - [ ] set up hooks for linting
 - [x] set up custom slash command `/tech_specs` and `/feature_specs`
 - [ ] implement lint and notifier hook <https://chatgpt.com/share/6873341a-a0bc-800c-b257-76c0b7ad5767>
-- [ ] set up the universal claude.md and custom slash command inspired by [this dude](https://github.com/Veraticus/nix-config/tree/main/home-manager/claude-code)
 - delete the nice tone portion in e_reader claude
-- global claude.md
-  - contructive critisism tone <https://mp.weixin.qq.com/s/ZoFW6ZznKGxR7jR0U6Vi4w>
-  - research, plan, code cycle
 - [ ] change the prompt referencing method
   - a AGENT/ that symlink to prompts dir
   - in the repo wise claude.md file, use @AGENT/xxxxx to reference instructions
+- [x] set up the universal claude.md and custom slash command inspired by [this dude](https://github.com/Veraticus/nix-config/tree/main/home-manager/claude-code)
+- delete the nice tone portion in e_reader claude
+- global claude.md
+    - [x] contructive critisism tone https://mp.weixin.qq.com/s/ZoFW6ZznKGxR7jR0U6Vi4w
+    - [x] research, plan, code cycle
 
 ### squad refactor using kiro
 
