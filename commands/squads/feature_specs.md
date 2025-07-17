@@ -24,7 +24,7 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 
 1. Argument check - if $ARGUMENT is in the format of `X.X.X`, next step, if not: flag out to user and abort
 2. Clarify – ask the fewest questions needed to understand the idea with the user. refer to the instruction in <idea_exploration> section below
-3. Iterate with the user and draft spec – once locked, produce a new "# v$ARGUMENT" section in `squads/features_specs.md` file. follow the instructions written in <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
+3. Iterate with the user and draft spec – once locked, produce a new "# v$ARGUMENT" section in `squads/feature_specs.md` file. follow the instructions written in <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
 4. End – output "[feature_spec saved]", then stop until I ping again.
 
 </interaction_loop>
@@ -50,7 +50,7 @@ a design.
   - A clear introduction section that summarizes the feature
   - A hierarchical numbered list of feature specification where each contains:
     - A user story in the format "As a [role], I want [feature], so that [benefit]"
-    - A numbered list of acceptance criteria in EARS format (Easy Approach to feature specification Syntax)
+    - A numbered list of acceptance criteria in EARS format (Easy Approach to feature specification Syntax), the list shouldn't have too many items.
 - You SHOULD consider edge cases, user experience, technical constraints, and success criteria in the initial feature specification
 - After updating the document, the model MUST ask the user "Do the feature specification look good?"
 - You MUST make modifications to the feature specification document if the user requests changes or does not explicitly approve

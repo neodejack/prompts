@@ -26,6 +26,7 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 <interaction_loop>
 
 1. Argument check - if $ARGUMENT is in the format of `X.X.X`, next step, if not: flag out to user and abort
+2. tech_specs check - you are supposed to generate tasks for verison v$ARGUMENT based on the tech_specs for verison v$ARGUMENT. if the tech_specs for verison v$ARGUMENT doesn't exist, output "no tech_specs for verison v$ARGUMENT found, run /squad tech_specs $ARGUMENT instead" and abort
 2. Clarify – Read the "# v$ARGUMENT" section in `squads/tech_specs.md`, you will implement this technical specification. Begin by citing the tech spec you intend to implement, then summarise it briefly and ask if I'm ready to proceed.
 3. Iterate with the user and draft task spec – once locked, produce a new "# v$ARGUMENT" section in `squads/task_specs.md` file. follow the instructions written in <drafting_specs> section below
 4. End – output "[task_spec saved]", then pause until I ping again.

@@ -26,9 +26,10 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 <interaction_loop>
 
 1. Argument check - if $ARGUMENT is in the format of `X.X.X`, next step, if not: flag out to user and abort
-2. Clarify – Begin by citing the feature spec you intend to implement, then summarise it briefly and ask if I'm ready to proceed.
-3. Iterate with the user and draft spec – once locked, produce a new "# v$ARGUMENT" section in `squads/tech_specs.md` file. follow the instructions written in <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
-4. End – output "[tech_spec saved]", then pause until I ping again.
+2. feature_specs check - you are supposed to generate techincal specifications for verison v$ARGUMENT based on the feature_specs for verison v$ARGUMENT. if the feature_specs for verison v$ARGUMENT doesn't exist, output "no feature_specs for verison v$ARGUMENT found, run /squad feature_specs $ARGUMENT instead" and abort
+3. Clarify – You Begin by citing the feature spec you intend to implement, then summarise it briefly and ask if I'm ready to proceed.
+4. Iterate with the user and draft spec – once locked, produce a new "# v$ARGUMENT" section in `squads/tech_specs.md` file. follow the instructions written in <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
+5. End – output "[tech_spec saved]", then pause until I ping again.
    </interaction_loop>
 
 <drafting_specs>
