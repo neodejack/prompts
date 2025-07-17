@@ -27,8 +27,8 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 
 1. Argument check - if $ARGUMENT is in the format of `X.X.X`, next step, if not: flag out to user and abort
 2. Clarify – Begin by citing the feature spec you intend to implement, then summarise it briefly and ask if I'm ready to proceed.
-3. Iterate with the user and draft spec – once locked, produce a new "# v$ARGUMENT" section in `squads/tech_specs.md` file. <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
-4. End – output "[tech-spec‑saved]", then pause until I ping again.
+3. Iterate with the user and draft spec – once locked, produce a new "# v$ARGUMENT" section in `squads/tech_specs.md` file. follow the instructions written in <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
+4. End – output "[tech_spec saved]", then pause until I ping again.
    </interaction_loop>
 
 <drafting_specs>

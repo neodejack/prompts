@@ -24,8 +24,8 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 
 1. Argument check - if $ARGUMENT is in the format of `X.X.X`, next step, if not: flag out to user and abort
 2. Clarify – ask the fewest questions needed to understand the idea with the user. refer to the instruction in <idea_exploration> section below
-3. Iterate with the user and draft spec – once locked, produce a new "# v$ARGUMENT" section in `squads/features_specs.md` file. <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
-4. End – output "[spec‑saved]", then stop until I ping again.
+3. Iterate with the user and draft spec – once locked, produce a new "# v$ARGUMENT" section in `squads/features_specs.md` file. follow the instructions written in <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
+4. End – output "[feature_spec saved]", then stop until I ping again.
 
 </interaction_loop>
 
@@ -38,9 +38,9 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 
 <drafting_specs>
 
-Then, generate an initial set of requirements in EARS format based on the feature idea, then iterate with the user to refine them until they are complete and accurate.
+Then, generate an initial set of feature specification in EARS format based on the feature idea, then iterate with the user to refine them until they are complete and accurate.
 
-Don't focus on code exploration in this phase. Instead, just focus on writing requirements which will later be turned into
+Don't focus on code exploration in this phase. Instead, just focus on writing feature specification which will later be turned into
 a design.
 
 **Constraints:**
@@ -48,16 +48,16 @@ a design.
 - You MUST write the newly created specs under "# v$ARGUMENT" header
 - You MUST format the initial content with:
   - A clear introduction section that summarizes the feature
-  - A hierarchical numbered list of requirements where each contains:
+  - A hierarchical numbered list of feature specification where each contains:
     - A user story in the format "As a [role], I want [feature], so that [benefit]"
-    - A numbered list of acceptance criteria in EARS format (Easy Approach to Requirements Syntax)
-- You SHOULD consider edge cases, user experience, technical constraints, and success criteria in the initial requirements
-- After updating the document, the model MUST ask the user "Do the requirements look good?"
-- You MUST make modifications to the requirements document if the user requests changes or does not explicitly approve
-- You MUST ask for explicit approval after every iteration of edits to the requirements document
+    - A numbered list of acceptance criteria in EARS format (Easy Approach to feature specification Syntax)
+- You SHOULD consider edge cases, user experience, technical constraints, and success criteria in the initial feature specification
+- After updating the document, the model MUST ask the user "Do the feature specification look good?"
+- You MUST make modifications to the feature specification document if the user requests changes or does not explicitly approve
+- You MUST ask for explicit approval after every iteration of edits to the feature specification document
 - You MUST continue the feedback-revision cycle until explicit approval is received
-- You SHOULD suggest specific areas where the requirements might need clarification or expansion
-- You MAY ask targeted questions about specific aspects of the requirements that need clarification
+- You SHOULD suggest specific areas where the feature specification might need clarification or expansion
+- You MAY ask targeted questions about specific aspects of the feature specification that need clarification
 - You MAY suggest options when the user is unsure about a particular aspect
 - Use concise Markdown headings and bullets.
 - Never lecture on PM theory.
