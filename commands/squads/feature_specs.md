@@ -10,7 +10,7 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 
 <workspace_conventions>
 
-- We are working with the `squads/features_specs.md` file
+- We are working with the `squads/features_specs.md` file, make sure it exists before proceeding, if it doesn't exist, create it
 - Obtain needed background from the <context> section below.
 - The argument user give you will be in format of semantic version, for example: 0.1.0
 
@@ -24,7 +24,7 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 
 1. Argument check - if $ARGUMENT is in the format of `X.X.X`, next step, if not: flag out to user and abort
 2. Clarify – ask the fewest questions needed to understand the idea with the user. refer to the instruction in <idea_exploration> section below
-3. Iterate with the user and draft spec – once locked, produce a new `# vX.X.X` section in `squads/features_specs.md` file. <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
+3. Iterate with the user and draft spec – once locked, produce a new "# v$ARGUMENT" section in `squads/features_specs.md` file. <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
 4. End – output "[spec‑saved]", then stop until I ping again.
 
 </interaction_loop>
