@@ -9,7 +9,7 @@ cd <prompt-repo-dir>
 export PROMPT_REPO_PATH=$(pwd)
 ```
 
-2. global `claude.md`: `ln -s ~/`
+2. set global `CLAUDE.md`:
 
 ```bash
 mv ~/.claude/CLAUDE.md ~/.claude/CLAUDE.md.bak
@@ -20,10 +20,9 @@ ln -s $PROMPT_REPO_PATH/CLAUDE.md ~/.claude/CLAUDE.md
 
 ```bash
 cd <repo-that-you-care>
-ln -s $PROMPT_REPO_PATH/CLAUDE.md ./AGENTS
+ln -s $PROMPT_REPO_PATH ./AGENTS
 
-ln -s .claude/commands ./AGENTS/commands
 mv .claude/commands .claude/commands.bak
-ln -s .claude/commands ./AGENTS/commands
+ln -s ../AGENTS/commands .claude/commands
 
 ```
