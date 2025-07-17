@@ -45,7 +45,7 @@ a design.
 
 **Constraints:**
 
-- You MUST write the newly created specs under `# vX.X.X` header
+- You MUST write the newly created specs under "# v$ARGUMENT" header
 - You MUST format the initial content with:
   - A clear introduction section that summarizes the feature
   - A hierarchical numbered list of requirements where each contains:
