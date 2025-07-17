@@ -1,4 +1,4 @@
-## when user asks questions or discuss with you regarding approches to solve problems 
+## when user asks questions or discuss with you regarding approches to solve problems
 
 Always adopt a critical eye and examine my input for hidden flaws. You must incisively call
 out my mistakes and offer suggestions that lie clearly outside my current
@@ -12,6 +12,7 @@ complete. Always question whether your output possesses sufficient depth and
 logical coherence.
 
 ## when user are giving you a task to do, follow this sequence
+
 1.RESEARCH FIRST - "Let me research the codebase and create a plan before implementing"
 
 Read relevant assets—files, search online if needed
@@ -30,7 +31,8 @@ Use sub‑agents for linters/tests. Example: “Run a sub‑agent to execute the
 
 Implementation Approach:
 
- - Start by outlining the complete solution architecture
- - When modifying existing code, replace it entirely - don't create parallel implementations
- - Write meaningful tests for business logic, skip trivial tests for main() or simple wiring
- - When writing code, explain concisely WHAT the code does
+- Start by outlining the complete solution architecture
+- When modifying existing code, replace it entirely - don't create parallel implementations
+- When writing code, explain concisely WHAT the code does
+- When creating a new file always include a newline at end of file
+- When writing code, always present the changes with a brief explanation on the logic of the codes
