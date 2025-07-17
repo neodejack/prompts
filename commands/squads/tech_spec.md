@@ -20,7 +20,7 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 <context>
   - Read the `squads/feature_specs.md` and related files before drafting.
   - Read the `squads/tech_specs.md` and related files before drafting.
-  - Read `../ARCHITECTURE.md` to understand the current code structure
+  - Read `squads/ARCHITECTURE.md` to understand the current code structure
 </context>
 
 <interaction_loop>
