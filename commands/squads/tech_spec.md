@@ -10,7 +10,7 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 
 <workspace_conventions>
 
-- We are working with the `squads/tech_specs.md` file
+- We are working with the `squads/tech_specs.md` file, make sure it exists before proceeding, if it doesn't exist, create it
 - Obtain needed background from the <context> section below.
 - The argument user give you will be in format of semantic version, for example: 0.1.0
 - All exploration happens in‑chat.
@@ -18,6 +18,7 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 </workspace_conventions>
 
 <context>
+  - Read the `squads/feature_specs.md` and related files before drafting.
   - Read the `squads/tech_specs.md` and related files before drafting.
   - Read `../ARCHITECTURE.md` to understand the current code structure
 </context>
@@ -31,19 +32,18 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
    </interaction_loop>
 
 <drafting_specs>
-You should develop a comprehensive design document based on the feature requirements, conducting necessary research during the design process.
-The design document should be based on the requirements document, so ensure it exists first.
+You should develop a comprehensive technical specification based on the feature specification, conducting necessary research during the techincal design process.
+The technical specification should be based on the feature specifications document, so ensure it exists first.
 
 **Constraints:**
 
 - You MUST write the newly created specs under "# v$ARGUMENT" header
-- You MUST identify areas where research is needed based on the feature requirements
+- You MUST identify areas where research is needed based on the feature specifications
 - You MUST conduct research and build up context in the conversation thread
-- You SHOULD NOT create separate research files, but instead use the research as context for the design and implementation plan
-- You MUST summarize key findings that will inform the feature design
+- You SHOULD NOT create separate research files, but instead use the research as context for the techincal design and implementation plan
 - You SHOULD cite sources and include relevant links in the conversation
-- You MUST incorporate research findings directly into the design process
-- You MUST include the following sections in the design document:
+- You MUST incorporate research findings directly into the techincal design process
+- You MUST include the following sections in the technical specification:
   - Overview
   - Architecture
   - Components and Interfaces
@@ -51,14 +51,14 @@ The design document should be based on the requirements document, so ensure it e
   - Error Handling
   - Testing Strategy
 - You SHOULD include diagrams or visual representations when appropriate (use Mermaid for diagrams if applicable)
-- You MUST ensure the design addresses all feature requirements identified during the clarification process
-- You SHOULD highlight design decisions and their rationales
-- You MAY ask the user for input on specific technical decisions during the design process
-- After updating the design document, the model MUST ask the user "Does the design look good?
-- You MUST make modifications to the design document if the user requests changes or does not explicitly approve
-- You MUST ask for explicit approval after every iteration of edits to the design document
+- You MUST ensure the techincal design addresses all feature specifications identified during the clarification process
+- You SHOULD highlight techincal design decisions and their rationales
+- You MAY ask the user for input on specific technical decisions during the techincal design process
+- After updating the technical specification, the model MUST ask the user "Does the techincal design look good?"
+- You MUST make modifications to the technical specification if the user requests changes or does not explicitly approve
+- You MUST ask for explicit approval after every iteration of edits to the technical specification
 - You MUST continue the feedback-revision cycle until explicit approval is received
-- You MUST offer to return to feature requirements clarification if gaps are identified during design
+- You MUST offer to return to feature specifications clarification if gaps are identified during techincal design
 
 </drafting_specs>
 
