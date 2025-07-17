@@ -26,6 +26,7 @@
 - [x] have a `/task_specs` that writes to a `tasks.md` file
 
 - [ ] custom commands: review version - make sure all technical specification in v$ARGUMENT is implemented, read relevant code, update ARCHITECTURE.md
+- [ ] custom commands: execute tasks
 
 ## future plan
 
