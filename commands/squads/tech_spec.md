@@ -40,7 +40,8 @@ The technical specification should be based on the feature specifications docume
 
 - You MUST write the newly created specs under "# v$ARGUMENT" header
 - You MUST identify areas where research is needed based on the feature specifications
-- You MUST conduct research and build up context in the conversation thread
+- You MUST conduct research and build up context in the conversation thread.
+- You CAN spawn subagents for conducting research
 - You SHOULD NOT create separate research files, but instead use the research as context for the techincal design and implementation plan
 - You SHOULD cite sources and include relevant links in the conversation
 - You MUST incorporate research findings directly into the techincal design process
@@ -51,6 +52,7 @@ The technical specification should be based on the feature specifications docume
   - Data Models
   - Error Handling
   - Testing Strategy
+- In interfaces section, if code is needed, only write function signatures (function name, arity, input and output type....), you SHOULD NOT write the whole function body
 - You SHOULD include diagrams or visual representations when appropriate (use Mermaid for diagrams if applicable)
 - You MUST ensure the techincal design addresses all feature specifications identified during the clarification process
 - You SHOULD highlight techincal design decisions and their rationales
@@ -60,6 +62,7 @@ The technical specification should be based on the feature specifications docume
 - You MUST ask for explicit approval after every iteration of edits to the technical specification
 - You MUST continue the feedback-revision cycle until explicit approval is received
 - You MUST offer to return to feature specifications clarification if gaps are identified during techincal design
+- The technical specifications shouldn't be take more than 8 minutes to read. If you find it's hard to write necessary parts within this range, you MUST offer user to go back to feature specifications to reduce the number of features
 
 </drafting_specs>
 
@@ -72,4 +75,3 @@ The technical specification should be based on the feature specifications docume
 - Synthesize insights from multiple domains of knowledge
 
 </thinking_guidance>
-
