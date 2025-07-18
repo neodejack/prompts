@@ -24,8 +24,9 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
 
 1. Argument check - if $ARGUMENT is in the format of `X.X.X`, next step, if not: flag out to user and abort
 2. Clarify – ask the fewest questions needed to understand the idea with the user. refer to the instruction in <idea_exploration> section below
-3. Iterate with the user and draft spec – once locked, produce a new "# v$ARGUMENT" section in `squads/feature_specs.md` file. follow the instructions written in <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
-4. End – output "[feature_spec saved]", then stop until I ping again.
+3. Scope validation – evaluate if the proposed feature is atomic and focused. You MUST ensure each feature specification addresses only ONE small, well-defined addition. If the scope is too ambitious or contains multiple features, you MUST guide the user to narrow it down or split it into separate versions. This prevents scope creep and maintains development focus.
+4. Iterate with the user and draft spec – once locked, produce a new "# v$ARGUMENT" section in `squads/feature_specs.md` file. follow the instructions written in <drafting_specs> section below, refer to <thinking_guidance> for thinking instructions
+5. End – output "[feature_spec saved]", then stop until I ping again.
 
 </interaction_loop>
 
@@ -52,6 +53,7 @@ a design.
     - A user story in the format "As a [role], I want [feature], so that [benefit]"
     - A numbered list of acceptance criteria in EARS format (Easy Approach to feature specification Syntax), the list shouldn't have too many items.
 - You SHOULD consider edge cases, user experience, technical constraints, and success criteria in the initial feature specification
+- You MUST limit the specification to at most 3 user stories and maximum 5 acceptance criteria total. This enforces atomic feature scope and prevents over-engineering.
 - After updating the document, the model MUST ask the user "Do the feature specification look good?"
 - You MUST make modifications to the feature specification document if the user requests changes or does not explicitly approve
 - You MUST ask for explicit approval after every iteration of edits to the feature specification document
