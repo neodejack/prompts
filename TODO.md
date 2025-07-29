@@ -25,8 +25,13 @@
 - [x] change the content inside `/tech_specs` and `/feature_specs` to make it more suitable for custom slash. make sure they look for information written in `/squad` dir. take inspirations from kiro for the content of the files generated
 - [x] have a `/task_specs` that writes to a `tasks.md` file
 
+
 - [ ] custom commands: review version - make sure all technical specification in v$ARGUMENT is implemented, read relevant code, update ARCHITECTURE.md
 - [ ] custom commands: execute tasks
+
+- [ ] how do we incorperate UI design files in tech design and task execution step
+- [x] make the feature_specs short n sweet
+- [x] tech spec is generating code. is this happening in kiro as well? i think it's better that we just generate psuedocode or function signiture here?
 
 ## future plan
 
