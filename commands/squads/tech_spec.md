@@ -33,36 +33,53 @@ allowed_tools: ["Read", "Glob", "Grep", "Write", "LS"]
    </interaction_loop>
 
 <drafting_specs>
-You should develop a comprehensive technical specification based on the feature specification, conducting necessary research during the techincal design process.
+You should develop a comprehensive technical specification based on the feature specification, conducting necessary research during the techincal design process. The goal is to capture the optimal implementation strategy with clear reasoning about trade-offs and constraints.
+
 The technical specification should be based on the feature specifications document, so ensure it exists first.
 
-**Constraints:**
+**Core Principles:**
 
-- You MUST write the newly created specs under "# v$ARGUMENT" header
-- You MUST identify areas where research is needed based on the feature specifications
-- You MUST conduct research and build up context in the conversation thread.
-- You CAN spawn subagents for conducting research
-- You SHOULD NOT create separate research files, but instead use the research as context for the techincal design and implementation plan
-- You SHOULD cite sources and include relevant links in the conversation
-- You MUST incorporate research findings directly into the techincal design process
-- You MUST include the following sections in the technical specification:
-  - Overview
-  - Architecture
-  - Components and Interfaces
-  - Data Models
-  - Error Handling
-  - Testing Strategy
-- In interfaces section, if code is needed, only write function signatures (function name, arity, input and output type....), you SHOULD NOT write the whole function body
-- You SHOULD include diagrams or visual representations when appropriate (use Mermaid for diagrams if applicable)
-- You MUST ensure the techincal design addresses all feature specifications identified during the clarification process
-- You SHOULD highlight techincal design decisions and their rationales
-- You MAY ask the user for input on specific technical decisions during the techincal design process
-- After updating the technical specification, the model MUST ask the user "Does the techincal design look good?"
-- You MUST make modifications to the technical specification if the user requests changes or does not explicitly approve
-- You MUST ask for explicit approval after every iteration of edits to the technical specification
-- You MUST continue the feedback-revision cycle until explicit approval is received
+- **Narrative Flow**: Structure the document as a logical progression where each paragraph flows naturally from the previous. Make complex solutions feel straightforward and inevitable.
+- **Problem-First Thinking**: Start with constraints and context, then build up the solution incrementally rather than jumping to implementation details.
+- **Decision Clarity**: Explicitly state why alternatives were rejected. Your future self needs to understand the reasoning, not just the conclusion.
+- **Ruthless Editing**: Cut unnecessary words. Aim for conciseness while maintaining completeness of thought.
+
+**Document Structure:**
+
+Instead of rigid sections, organize around these narrative elements:
+
+1. **Context & Constraints** - What problem are we solving and what limits our options?
+2. **Solution Strategy** - The core approach and why it's optimal given the constraints
+3. **Implementation Path** - Key components and their interactions, building logically
+4. **Risk Mitigation** - What could go wrong and how we'll handle it
+5. **Validation Plan** - How we'll know the solution works
+
+**Writing Guidelines:**
+
+- You MUST write under "# v$ARGUMENT" header
+- Lead with problem context before jumping to solutions
+- One key idea per paragraph - each should be summarizable in a single sentence
+- Anticipate objections and address them preemptively
+- Use function signatures only, never full implementations
+- Include diagrams (Mermaid) when they clarify complex relationships
+- Research thoroughly but integrate findings into narrative, don't dump raw research
+- Challenge your own assumptions - if something feels hand-wavy, dig deeper
 - You MUST offer to return to feature specifications clarification if gaps are identified during techincal design
 - The technical specifications shouldn't be take more than 8 minutes to read. If you find it's hard to write necessary parts within this range, you MUST offer user to go back to feature specifications to reduce the number of features
+
+**Quality Checks:**
+
+- Does each paragraph flow logically from the previous?
+- Would someone unfamiliar with the problem understand why this solution is optimal?
+- Are there any decision points where the rationale isn't clear?
+- Could you cut 20% of the words without losing meaning?
+
+**Research Integration:**
+
+- Conduct necessary research during design process
+- Spawn subagents for complex investigations
+- Cite sources and include relevant context
+- Use research to strengthen decision rationale, not as separate content
 
 </drafting_specs>
 
