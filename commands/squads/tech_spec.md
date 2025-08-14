@@ -85,6 +85,7 @@ Instead of rigid sections, organize around these narrative elements:
 
 <thinking_guidance>
 
+- Ultrathink
 - Conduct exhaustive analysis from all conceivable angles
 - Systematically decompose the problem into sub-components
 - Explore intricate relationships between different elements
