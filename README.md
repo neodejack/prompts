@@ -5,7 +5,7 @@
 1. clone the repo:
 
 ```bash
-cd <prompt-repo-dir>
+cd prompts
 export PROMPT_REPO_PATH=$(pwd)
 ```
 
@@ -27,10 +27,18 @@ ln -s $PROMPT_REPO_PATH/hook_scripts ~/.claude/hook_scripts
 3. repo-wise claude code slash command settings
 
 ```bash
-cd <repo-that-you-care>
-ln -s $PROMPT_REPO_PATH ./AGENTS
+cd target_repo
 
-mv .claude/commands .claude/commands.bak
-ln -s ../AGENTS/commands .claude/commands
+export TARGET_REPO=$(pwd)
+ln -s $PROMPT_REPO_PATH $TARGET_REPO/AGENTS
 
+mv $TARGET_REPO/.claude/commands $TARGET_REPO/.claude/commands.bak
+ln -s $TARGET_REPO/AGENTS/commands $TARGET_REPO/.claude/commands
+```
+
+4. hooks settings
+
+```bash
+mv $TARGET_REPO/.claude/settings.json $TARGET_REPO/.claude/settings.json.bak
+ln -s $TARGET_REPO/AGENTS/settings.json $TARGET_REPO/.claude/settings.json
 ```
