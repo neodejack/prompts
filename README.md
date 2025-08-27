@@ -19,12 +19,14 @@ stow -vt ~ claude
 
 ```bash
 cd target_repo
-
 export TARGET_REPO=$(pwd)
-ln -s $PROMPT_REPO_PATH $TARGET_REPO/AGENTS
 
-mv $TARGET_REPO/.claude/commands $TARGET_REPO/.claude/commands.bak
-ln -s $TARGET_REPO/AGENTS/commands $TARGET_REPO/.claude/commands
+# Optionally back up existing commands
+[ -d "$TARGET_REPO/.claude/commands" ] && mv "$TARGET_REPO/.claude/commands" "$TARGET_REPO/.claude/commands.bak"
+
+# Use stow to link the commands package into this repo's .claude
+# -d points stow at the package dir containing "commands"
+stow -vt "$TARGET_REPO/.claude" -d "$PROMPT_REPO_PATH/claude/.claude" commands
 ```
 
 4. hooks settings
