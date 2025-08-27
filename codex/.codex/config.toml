@@ -3,3 +3,5 @@ hide_agent_reasoning = true
 
 [shell_environment_policy]
 inherit = "all"
+
+notify = ["bash", "$HOME/code/prompts/codex/.codex/notify.sh"]
