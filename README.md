@@ -1,21 +1,29 @@
-# claude code stuff
+# coding agents config
 
-## how to use
-
-1. clone the repo:
+- clone the repo:
 
 ```bash
 cd prompts
 export PROMPT_REPO_PATH=$(pwd)
 ```
 
-2. set global claude settings:
+## claude code
+
+1. set global claude settings:
 
 ```bash
-stow -vt ~ claude
+# Ensure Claude's state dir exists (CLI writes runtime files here)
+mkdir -p "$HOME/.claude"
+
+# Link only curated configs into ~/.claude
+stow -vt "$HOME/.claude" -d "$PROMPT_REPO_PATH/claude/.claude" commands hook_scripts
+
+# Link file items (stow operates on directories)
+ln -sf "$PROMPT_REPO_PATH/claude/.claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
+ln -sf "$PROMPT_REPO_PATH/claude/.claude/settings.json" "$HOME/.claude/settings.json"
 ```
 
-3. repo-wise claude code slash command settings
+2. repo-wise claude code slash command settings
 
 ```bash
 cd target_repo
@@ -29,9 +37,20 @@ export TARGET_REPO=$(pwd)
 stow -vt "$TARGET_REPO/.claude" -d "$PROMPT_REPO_PATH/claude/.claude" commands
 ```
 
-4. hooks settings
+3. hooks settings
 
 ```bash
 mv $TARGET_REPO/.claude/settings.json $TARGET_REPO/.claude/settings.json.bak
 ln -s $TARGET_REPO/AGENTS/settings.json $TARGET_REPO/.claude/settings.json
+```
+
+## codex
+
+```bash
+# Ensure Claude's state dir exists (CLI writes runtime files here)
+mkdir -p "$HOME/.codex"
+
+# Link only curated configs into ~/.claude
+ln -sf "$PROMPT_REPO_PATH/codex/.codex/AGENTs.md" "$HOME/.codex/AGENTS.md"
+ln -sf "$PROMPT_REPO_PATH/codex/.codex/config.toml" "$HOME/.codex/config.toml"
 ```
