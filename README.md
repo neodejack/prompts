@@ -9,19 +9,10 @@ cd prompts
 export PROMPT_REPO_PATH=$(pwd)
 ```
 
-2. set global `CLAUDE.md`:
+2. set global claude settings:
 
 ```bash
-mv ~/.claude/CLAUDE.md ~/.claude/CLAUDE.md.bak
-ln -s $PROMPT_REPO_PATH/CLAUDE.md ~/.claude/CLAUDE.md
-```
-
-3. set global hook with `settings.json`
-```bash
-mv ~/.claude/settings.json ~/.claude/settings.json.bak
-ln -s $PROMPT_REPO_PATH/settings.json ~/.claude/settings.json
-
-ln -s $PROMPT_REPO_PATH/hook_scripts ~/.claude/hook_scripts
+stow -vt ~ claude
 ```
 
 3. repo-wise claude code slash command settings
