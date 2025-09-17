@@ -53,4 +53,5 @@ mkdir -p "$HOME/.codex"
 # Link only curated configs into ~/.claude
 ln -sf "$PROMPT_REPO_PATH/codex/.codex/AGENTs.md" "$HOME/.codex/AGENTS.md"
 ln -sf "$PROMPT_REPO_PATH/codex/.codex/config.toml" "$HOME/.codex/config.toml"
+ln -sf "$PROMPT_REPO_PATH/codex/.codex/prompts" "$HOME/.codex/prompts"
 ```
